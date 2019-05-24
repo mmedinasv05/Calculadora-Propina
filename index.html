@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/query.css">
+    <title>Calculadora para propinas</title>
+</head>
+<body>
+    <section class="containerMain">
+        <section class="containerCalculator">
+            <header class="headerCalculator">
+                <h1 class="title">Calculadora de propinas</h1>
+            </header>
+            <section class="bodyCalculator">
+                <input type="text" placeholder="Ingrese el total a pagar" id="TotalPagar">
+                <input type="text" placeholder="Porcentaje de propina" id="PocentajePropina">
+                <input type="text" placeholder="Personas a dividir la propina" id="TotalPersonas">
+                <input type="button" value="Calcular propina" onclick="calularPropina()">
+                <input type="button" value="Limpiar " onclick="limpiarCampos()">
+            </section>
+            <footer class="footerCalculator">
+                <p class="paragraph" id="propinaTotal"></p>
+                <p class="paragraph" id="propinaDividir"></p>
+                <p class="paragraph" id="messageError"></p>
+            </footer>
+        </section>
+    </section>
+</body>
+<script src="js/validaciones.js"></script>
+</html>

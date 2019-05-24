@@ -1,0 +1,57 @@
+/**********SMARPHONE**********/
+
+@media (max-width:500px){
+    .containerMain{
+        width: 100%;
+        height: 650px;;
+        background-color: #FFFFFF;
+    }
+    .containerCalculator{
+        width: 95%;
+        height: 600px;
+        background-color: #63C79A;
+        border-radius: 8px;
+        box-shadow: none;
+        flex-wrap: wrap;
+    }
+    .headerCalculator{
+        width: 100%;
+        height: 100px;
+        position: relative;
+        background-color: #63C79A;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        flex-direction: column;
+    }
+    .bodyCalculator{
+        width: 100%;
+        height: 400px;
+        background-color: #63C79A;
+        flex-direction: column;
+    }
+    .title{
+        font-size: 30px;
+        text-align: center;
+        font-family: var(--fontTitle);
+        color: #FFFFFF;
+    }
+    input[type="text"]{
+        width: 90%;
+        height: 30px;
+        border: 1px solid #63C79A;
+        border-radius: 8px;
+        background-color: none;
+        padding: 25px 20px;
+        font-size: 17px;
+        margin: 10px 0;
+        font-family: var(--fontFamilyParagraph);
+    }
+    .footerCalculator{
+        width: 100%;
+        height: 100px;
+        background-color: #63C79A;
+        flex-direction: column;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --backgroundMain: #f68787;
+    --backgroundCalculator: #FFFFFF;
+    --fontFamilyParagraph: 'Lato', sans-serif;
+    --fontTitle: 'Anton', sans-serif;
+}
+.containerMain,
+.headerCalculator,
+.bodyCalculator,
+.footerCalculator,
+.containerTheme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerMain{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--backgroundMain);
+}
+.containerCalculator{
+    width: 500px;
+    height: 600px;
+    background-color: var(--backgroundCalculator);
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px rgba(255,255,255,0.5);
+}
+.headerCalculator{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background-color: var(--backgroundCalculator);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    flex-direction: column;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+    font-family: var(--fontTitle);
+}
+.bodyCalculator{
+    width: 100%;
+    height: 350px;
+    background-color: var(--backgroundCalculator);
+    flex-direction: column;
+}
+input[type="text"]{
+    width: 80%;
+    height: 30px;
+    border: 1px solid #63C79A;
+    border-radius: 8px;
+    background-color: none;
+    padding: 25px 20px;
+    font-size: 17px;
+    margin: 10px 0;
+    font-family: var(--fontFamilyParagraph);
+}
+input[type="button"]{
+    width: 50%;
+    height: 50px;
+    border: 1px solid #63C79A;
+    font-size: 18px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    transition: all 1s;
+    color: #63C79A;
+}
+input[type="button"]:hover{
+    background-color: #63C79A;
+    border: 1px solid #63C79A;
+    color: #FFFFFF;
+}
+input[type="button"]:active{
+    border: 1px solid #63C79A;
+}
+.footerCalculator{
+    width: 100%;
+    height: 100px;
+    background-color: var(--backgroundMain);
+    flex-direction: column;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.paragraph{
+    color: #63C79A;
+    font-family: var(--fontFamilyParagraph);
+    font-size: 19px;
+    margin: 5px 0;
+    color: #FFFFFF;
+    text-align: center;
+}
